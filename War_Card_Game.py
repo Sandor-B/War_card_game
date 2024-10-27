@@ -122,7 +122,7 @@ def play_game(hand1, hand2, storage_hand1, storage_hand2, deck):
     while (len(hand1) > 4) or (len(hand2) > 4):
         num_rounds += 1
         play_round(hand1, storage_hand1, hand2, storage_hand2, ranks_list, num_rounds, deck)
-    print("Insufficient cards in one of the hands. Re-distributing all cards.")
+    print("Insufficient cards in one of the hands (insufficient as in not enough for a potential war scenario). Re-distributing all cards.")
     time.sleep(3)
     if len(storage_hand1) > len(storage_hand2):
         print("The winner of the game is player 1 (you), since they won more cards! Congratulations!")
